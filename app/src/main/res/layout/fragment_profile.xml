@@ -298,6 +298,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/profile_bottombar"
+        android:background="@drawable/border_top_grey"
         android:layout_alignParentBottom="true">
 
         <ImageButton
