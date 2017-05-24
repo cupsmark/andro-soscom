@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_topbar"
+        android:padding="15dp"
+        android:background="@drawable/border_bottom_grey">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon_shop" />
+
+        <TextView
+            android:id="@+id/id_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#95989A"
+            android:background="@android:color/transparent"
+            android:text="PROFILE"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/profile_bottombar"
+        android:layout_below="@+id/profile_topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Hy, John Doe"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/icon_test"
+                    android:layout_width="38dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_profile" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Delivery Address"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/icon_map"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    app:srcCompat="@drawable/icon_map" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_listorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="List Order"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/icon_listorder"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_listorder" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Notification"
+                    android:textSize="18sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/id_address"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_notif2" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Privacy"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/id_address"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_privacy" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_account_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Account Setting"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/id_address"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_acsetting" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Help"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/id_address"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_help" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/profile_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="15dp"
+                    android:text="Log Out"
+                    android:textSize="16sp"
+                    android:background="@drawable/border_bottom_grey"/>
+
+                <ImageButton
+                    android:id="@+id/id_address"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:padding="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/icon_logout" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/profile_bottombar"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/icon_notif"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_notification" />
+
+        <ImageButton
+            android:id="@+id/icon_profile_menu"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_profile" />
+
+        <ImageButton
+            android:id="@+id/icon_grid"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_grid" />
+
+        <ImageButton
+            android:id="@+id/icon_love"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            app:srcCompat="@drawable/icon_Love_menu" />
+
+        <ImageButton
+            android:id="@+id/icon_home"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            app:srcCompat="@drawable/Icon_home" />
+    </LinearLayout>
+
+
+</RelativeLayout>
