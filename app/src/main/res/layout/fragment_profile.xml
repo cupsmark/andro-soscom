@@ -301,9 +301,44 @@
         android:layout_alignParentBottom="true">
 
         <ImageButton
+            android:id="@+id/icon_home"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="14dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/Icon_home" />
+
+        <ImageButton
+            android:id="@+id/icon_love"
+            android:layout_width="40dp"
+            android:layout_marginLeft="36dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            app:srcCompat="@drawable/icon_Love_menu" />
+
+        <ImageButton
+            android:id="@+id/icon_grid"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="42dp"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_grid" />
+
+        <ImageButton
             android:id="@+id/icon_notif"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
             android:adjustViewBounds="true"
             android:padding="10dp"
             android:background="@android:color/transparent"
@@ -315,40 +350,11 @@
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
+            android:layout_marginLeft="38dp"
             android:padding="10dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
             app:srcCompat="@drawable/icon_profile" />
-
-        <ImageButton
-            android:id="@+id/icon_grid"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:padding="10dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon_grid" />
-
-        <ImageButton
-            android:id="@+id/icon_love"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"
-            android:padding="10dp"
-            app:srcCompat="@drawable/icon_Love_menu" />
-
-        <ImageButton
-            android:id="@+id/icon_home"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:adjustViewBounds="true"
-            android:background="@android:color/transparent"
-            android:scaleType="centerInside"
-            android:padding="10dp"
-            app:srcCompat="@drawable/Icon_home" />
     </LinearLayout>
 
 
