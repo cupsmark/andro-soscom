@@ -5,56 +5,152 @@
     android:layout_height="match_parent"
     android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/id_notification"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_topbar"
+        android:padding="15dp"
+        android:background="@drawable/border_bottom_grey">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon_shop" />
+
+        <TextView
+            android:id="@+id/id_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#95989A"
+            android:background="@android:color/transparent"
+            android:text="NOTIFICATION"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/profile_bottombar"
+        android:layout_below="@+id/profile_topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_topbar"
+                    android:layout_marginLeft="82dp"
+                    android:layout_marginTop="28dp" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#383838"
+                        android:text="@string/user_profile_name"
+                        android:layout_alignParentLeft="true" />
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/user_1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/img_notif_1" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:textSize="16dp"
-        android:layout_marginTop="25dp"
-        android:textColor="#95989A"
-        android:background="@android:color/transparent"
-        android:text="NOTIFICATION"
-        android:layout_alignTop="@+id/id_notification"
-        android:layout_centerHorizontal="true" />
+        android:orientation="horizontal"
+        android:id="@+id/profile_bottombar"
+        android:background="@drawable/border_top_grey"
+        android:layout_alignParentBottom="true">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_below="@+id/id_notification"
-        android:layout_marginTop="10dp"
-        android:background="#E7E8E8" />
+        <ImageButton
+            android:id="@+id/icon_home"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/Icon_home" />
 
-    <ImageButton
-        android:id="@+id/icon_refresh"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:scaleType="fitXY"
-        app:srcCompat="@drawable/icon_refresh" />
+        <ImageButton
+            android:id="@+id/icon_love"
+            android:layout_width="40dp"
+            android:layout_marginLeft="36dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:padding="10dp"
+            app:srcCompat="@drawable/icon_Love_menu" />
 
-    <ImageView
-        android:id="@+id/prof_1"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentStart="false"
-        android:layout_below="@+id/view2"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="20dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/img_notif_1" />
+        <ImageButton
+            android:id="@+id/icon_grid"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="42dp"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_grid" />
+
+        <ImageButton
+            android:id="@+id/icon_notif"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_notification" />
+
+        <ImageButton
+            android:id="@+id/icon_profile_menu"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="16dp"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_profile" />
+    </LinearLayout>
 
 
 </RelativeLayout>
