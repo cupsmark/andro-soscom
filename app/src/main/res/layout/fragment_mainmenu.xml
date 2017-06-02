@@ -80,7 +80,7 @@
         android:layout_marginTop="14dp"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        app:srcCompat="@drawable/Profile_2" />
+        app:srcCompat="@drawable/profile_2" />
 
     <TextView
         android:id="@+id/editText3"
@@ -298,7 +298,6 @@
         android:textColor="#fff"
         android:textSize="18dp"
         android:textStyle="bold"
-        android:layout_alignStart="@+id/imageButton13"
         android:layout_marginBottom="13dp"
         android:text="Adidas Superstar Primeknit" />
 

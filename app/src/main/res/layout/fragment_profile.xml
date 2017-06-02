@@ -156,7 +156,6 @@
                     android:background="@drawable/border_bottom_grey"/>
 
                 <ImageButton
-                    android:id="@+id/id_address"
                     android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -186,7 +185,6 @@
                     android:background="@drawable/border_bottom_grey"/>
 
                 <ImageButton
-                    android:id="@+id/id_address"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -216,7 +214,6 @@
                     android:background="@drawable/border_bottom_grey"/>
 
                 <ImageButton
-                    android:id="@+id/id_address"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -246,7 +243,6 @@
                     android:background="@drawable/border_bottom_grey"/>
 
                 <ImageButton
-                    android:id="@+id/id_address"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
@@ -310,7 +306,7 @@
             android:background="@android:color/transparent"
             android:padding="10dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/Icon_home" />
+            app:srcCompat="@drawable/icon_home" />
 
         <ImageButton
             android:id="@+id/icon_love"
@@ -321,7 +317,7 @@
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
             android:padding="10dp"
-            app:srcCompat="@drawable/icon_Love_menu" />
+            app:srcCompat="@drawable/icon_love_menu" />
 
         <ImageButton
             android:id="@+id/icon_grid"

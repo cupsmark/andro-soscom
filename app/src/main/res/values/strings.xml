@@ -3,4 +3,6 @@
 
     <string name="user_profile_name">User Profile 1 commented on &#10;your product</string>
     <string name="notification_item_desc"></string>
+    <string name="title_activity_intro">ActivityIntro</string>
+    <string name="title_activity_main">ActivityMain</string>
 </resources>

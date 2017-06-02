@@ -10,10 +10,3 @@
     <style name="AppTheme.NoTitle" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
 
 </resources>
-
-<item
-android:id="@+id/action_setting"
-android:icon="@mipmap/ic_launcher/ic_launcher,png"
-android:title=""
-app:showAsAction="always"
-</item>
