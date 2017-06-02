@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">New Cupslice</string>
+    <string name="app_name">Soscom</string>
 
     <string name="user_profile_name">User Profile 1 commented on &#10;your product</string>
     <string name="notification_item_desc"></string>
+
+    <string name="frg_signin_field_username">Username</string>
+    <string name="frg_signin_field_password">Password</string>
+    <string name="frg_signin_btn_forgot">Forgot Password&#63;</string>
+    <string name="frg_signin_btn_signup">New here &#63; Signup</string>
     <string name="title_activity_intro">ActivityIntro</string>
     <string name="title_activity_main">ActivityMain</string>
+    <string name="title_activity_auth">ActivityAuth</string>
 </resources>

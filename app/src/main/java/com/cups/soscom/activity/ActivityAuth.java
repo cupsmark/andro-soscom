@@ -12,12 +12,12 @@ import com.cups.soscom.helper.HelperGlobal;
 
 import java.util.Map;
 
-public class ActivityMain extends BaseActivity implements HelperGlobal.InterfaceFragment {
+public class ActivityAuth extends BaseActivity implements HelperGlobal.InterfaceFragment {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_auth);
     }
 
     @Override
@@ -28,7 +28,7 @@ public class ActivityMain extends BaseActivity implements HelperGlobal.Interface
             FragmentManager fm = getFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.addToBackStack(src.getTAG());
-            ft.add(R.id.act_fragment_main, src);
+            ft.add(R.id.act_fragment_auth, src);
             ft.commit();
         }
     }

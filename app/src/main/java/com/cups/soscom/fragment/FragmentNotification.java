@@ -1,6 +1,5 @@
 package com.cups.soscom.fragment;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,12 +16,12 @@ import com.cups.soscom.helper.HelperGlobal;
  * Created by ekobudiarto on 6/2/17.
  */
 
-public class FragmentProfile extends BaseFragment {
+public class FragmentNotification extends BaseFragment {
 
     View mainView;
     HelperGlobal.InterfaceFragment interfaceFragment;
     BaseActivity activity;
-    final String TAG_FRAGMENT_PROFILE = "tag:fragment_profile";
+    final String TAG_FRAGMENT_NOTIFICATION = "tag:fragment_notification";
 
 
     @Nullable
@@ -30,7 +29,7 @@ public class FragmentProfile extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if(mainView == null)
         {
-            mainView = inflater.inflate(R.layout.fragment_profile, container, false);
+            mainView = inflater.inflate(R.layout.fragment_notification, container, false);
         }
         onInit();
         return mainView;
@@ -49,7 +48,7 @@ public class FragmentProfile extends BaseFragment {
     @Override
     public void onInit() {
         super.onInit();
-        setTAG(TAG_FRAGMENT_PROFILE);
+        setTAG(TAG_FRAGMENT_NOTIFICATION);
     }
 
     @Override
@@ -64,6 +63,6 @@ public class FragmentProfile extends BaseFragment {
 
     @Override
     public String getTAG() {
-        return TAG_FRAGMENT_PROFILE;
+        return TAG_FRAGMENT_NOTIFICATION;
     }
 }

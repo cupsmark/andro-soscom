@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoTitle">
-        <activity android:name=".BaseActivity">
+        <activity android:name=".BaseActivity"></activity>
+        <activity
+            android:name=".activity.ActivityIntro"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ActivityIntro"
-            android:label="@string/title_activity_intro" />
-        <activity
             android:name=".activity.ActivityMain"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".activity.ActivityAuth"
+            android:label="@string/title_activity_auth"></activity>
     </application>
 
 </manifest>

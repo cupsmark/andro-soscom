@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_login"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/frg_signin_logo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_login" />
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom_grey">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_username_login" />
+
+                <com.cups.soscom.ui.UIEditText
+                    android:id="@+id/frg_signin_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/frg_signin_field_username"
+                    android:inputType="textPersonName"
+                    android:minHeight="40dp"
+                    android:textColor="@color/base_grey"
+                    android:textColorHint="@color/base_grey"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border_bottom_grey">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_padlock" />
+
+                <com.cups.soscom.ui.UIEditText
+                    android:id="@+id/frg_signin_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/frg_signin_field_password"
+                    android:inputType="textPassword"
+                    android:minHeight="40dp"
+                    android:textColor="@color/base_grey"
+                    android:textColorHint="@color/base_grey"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/frg_signin_imgbtn_signin"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_sigin" />
+
+            <com.cups.soscom.ui.UIButton
+                android:id="@+id/frg_signin_btn_forgot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:text="@string/frg_signin_btn_forgot"
+                android:textColor="@color/base_grey"
+                android:textSize="16dp" />
+
+            <ImageButton
+                android:id="@+id/frg_signin_imgbtn_fb"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_fb" />
+
+            <ImageButton
+                android:id="@+id/frg_signin_imgbtn_twitter"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_twitter" />
+
+            <com.cups.soscom.ui.UIButton
+                android:id="@+id/frg_signin_btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/border_top_white"
+                android:text="@string/frg_signin_btn_signup"
+                android:textColor="@color/base_white"
+                android:paddingTop="10dp"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
