@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/base_white">
+
+   <android.support.v4.view.ViewPager
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/frg_main_viewpager"
+       android:layout_alignParentTop="true"
+       android:layout_above="@+id/frg_main_appbarlayout"
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frg_main_appbarlayout"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/base_grey_light"
+            app:tabBackground="@drawable/bg_frg_main_bottombar"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabIndicatorHeight="0dp"
+            android:id="@+id/frg_main_tablayout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</RelativeLayout>

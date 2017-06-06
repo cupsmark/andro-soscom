@@ -306,7 +306,7 @@
             android:background="@android:color/transparent"
             android:padding="10dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon_home" />
+            app:srcCompat="@drawable/icon_menu_home" />
 
         <ImageButton
             android:id="@+id/icon_love"
@@ -317,7 +317,7 @@
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
             android:padding="10dp"
-            app:srcCompat="@drawable/icon_love_menu" />
+            app:srcCompat="@drawable/icon_menu_love" />
 
         <ImageButton
             android:id="@+id/icon_grid"
@@ -328,7 +328,7 @@
             android:padding="10dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon_grid" />
+            app:srcCompat="@drawable/icon_menu_grid" />
 
         <ImageButton
             android:id="@+id/icon_notif"
@@ -339,7 +339,7 @@
             android:padding="10dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon_notification" />
+            app:srcCompat="@drawable/icon_menu_notif" />
 
         <ImageButton
             android:id="@+id/icon_profile_menu"

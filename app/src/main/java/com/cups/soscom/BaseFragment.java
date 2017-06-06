@@ -1,6 +1,8 @@
 package com.cups.soscom;
 
-import android.app.Fragment;
+
+
+import android.support.v4.app.Fragment;
 
 import java.util.ArrayList;
 import java.util.Map;

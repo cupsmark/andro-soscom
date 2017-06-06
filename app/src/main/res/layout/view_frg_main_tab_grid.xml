@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_menu_grid"
+        android:id="@+id/view_frg_main_tab_icon_grid"/>
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="4dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view_frg_main_tab_icon_grid_selected" />
+
+</RelativeLayout>

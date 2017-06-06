@@ -14,8 +14,8 @@
         <fragment
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.cups.soscom.fragment.FragmentHome"
-            android:id="@+id/act_fragment_main_home" />
+            android:name="com.cups.soscom.fragment.FragmentMain"
+            android:id="@+id/act_fragment_main_default" />
 
     </RelativeLayout>
 

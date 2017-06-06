@@ -1,7 +1,7 @@
 package com.cups.soscom.activity;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.app.Activity;
 
@@ -25,7 +25,7 @@ public class ActivityMain extends BaseActivity implements HelperGlobal.Interface
         if(!src.isAdded())
         {
             src.setParameter(parameter);
-            FragmentManager fm = getFragmentManager();
+            FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             ft.addToBackStack(src.getTAG());
             ft.add(R.id.act_fragment_main, src);

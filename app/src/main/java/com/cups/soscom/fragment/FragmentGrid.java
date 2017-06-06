@@ -14,15 +14,15 @@ import com.cups.soscom.R;
 import com.cups.soscom.helper.HelperGlobal;
 
 /**
- * Created by ekobudiarto on 6/2/17.
+ * Created by ekobudiarto on 6/6/17.
  */
 
-public class FragmentNotification extends BaseFragment {
+public class FragmentGrid extends BaseFragment {
 
     View mainView;
     HelperGlobal.InterfaceFragment interfaceFragment;
     BaseActivity activity;
-    final String TAG_FRAGMENT_NOTIFICATION = "tag:fragment_notification";
+    final String TAG_FRAGMENT_GRID = "tag:fragment_grid";
 
 
     @Nullable
@@ -30,7 +30,7 @@ public class FragmentNotification extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if(mainView == null)
         {
-            mainView = inflater.inflate(R.layout.fragment_notification, container, false);
+            mainView = inflater.inflate(R.layout.fragment_grid, container, false);
         }
         onInit();
         return mainView;
@@ -59,7 +59,7 @@ public class FragmentNotification extends BaseFragment {
     @Override
     public void onInit() {
         super.onInit();
-        setTAG(TAG_FRAGMENT_NOTIFICATION);
+        setTAG(TAG_FRAGMENT_GRID);
     }
 
     @Override
@@ -80,6 +80,6 @@ public class FragmentNotification extends BaseFragment {
 
     @Override
     public String getTAG() {
-        return TAG_FRAGMENT_NOTIFICATION;
+        return TAG_FRAGMENT_GRID;
     }
 }

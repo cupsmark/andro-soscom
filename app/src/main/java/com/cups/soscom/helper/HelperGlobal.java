@@ -8,7 +8,11 @@ import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
 import android.graphics.Point;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -482,5 +486,28 @@ public class HelperGlobal {
 
     public static String getFormatedAmount(int amount){
         return NumberFormat.getNumberInstance(Locale.US).format(amount);
+    }
+
+    public static Bitmap setBitmapColor(int color,Bitmap source)
+    {
+        if (color == 0) {
+            color = 0xffffffff;
+        }
+
+        Bitmap maskBitmap = source;
+        final int width = maskBitmap.getWidth();
+        final int height = maskBitmap.getHeight();
+
+        Bitmap outBitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(outBitmap);
+        canvas.drawBitmap(maskBitmap, 0, 0, null);
+
+        Paint maskedPaint = new Paint();
+        maskedPaint.setColor(color);
+        maskedPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
+
+        canvas.drawRect(0, 0, width, height, maskedPaint);
+
+        return outBitmap;
     }
 }
