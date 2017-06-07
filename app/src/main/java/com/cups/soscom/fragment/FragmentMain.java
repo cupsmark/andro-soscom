@@ -1,13 +1,11 @@
 package com.cups.soscom.fragment;
 
 import android.app.Activity;
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -55,15 +53,7 @@ public class FragmentMain extends BaseFragment {
         return mainView;
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if(context != null)
-        {
-            this.activity = (BaseActivity) context;
-            interfaceFragment = (HelperGlobal.InterfaceFragment) this.activity;
-        }
-    }
+
 
     @Override
     public void onAttach(Activity activity) {
@@ -231,8 +221,8 @@ public class FragmentMain extends BaseFragment {
     {
         adapter = new MainPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new FragmentHome(), "HOME");
-        adapter.addFragment(new FragmentLove(), "LOVE");
-        adapter.addFragment(new FragmentGrid(), "GRID");
+        adapter.addFragment(new FragmentPopular(), "LOVE");
+        adapter.addFragment(new FragmentSearch(), "GRID");
         adapter.addFragment(new FragmentNotification(), "NOTIFICATION");
         adapter.addFragment(new FragmentProfile(), "PROFILE");
         viewPager.setAdapter(adapter);

@@ -17,12 +17,12 @@ import com.cups.soscom.helper.HelperGlobal;
  * Created by ekobudiarto on 6/6/17.
  */
 
-public class FragmentGrid extends BaseFragment {
+public class FragmentSearch extends BaseFragment {
 
     View mainView;
     HelperGlobal.InterfaceFragment interfaceFragment;
     BaseActivity activity;
-    final String TAG_FRAGMENT_GRID = "tag:fragment_grid";
+    final String TAG_FRAGMENT_GRID = "tag:fragment_search";
 
 
     @Nullable
@@ -30,7 +30,7 @@ public class FragmentGrid extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if(mainView == null)
         {
-            mainView = inflater.inflate(R.layout.fragment_grid, container, false);
+            mainView = inflater.inflate(R.layout.fragment_search, container, false);
         }
         onInit();
         return mainView;
