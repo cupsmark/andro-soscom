@@ -137,6 +137,13 @@ public class FragmentMain extends BaseFragment {
         final Bitmap iconNotifColored = HelperGlobal.setBitmapColor(HelperGlobal.getColor(activity, R.color.base_grey), iconNotifDefault);
         tabLayout.getTabAt(3).setCustomView(tabNotification);
 
+        final View tabProfile = LayoutInflater.from(activity).inflate(R.layout.view_frg_main_tab_profile, null, false);
+        final View bgProfileSelected = (View) tabProfile.findViewById(R.id.view_frg_main_tab_icon_profile_selected);
+        final ImageView iconProfile = (ImageView) tabProfile.findViewById(R.id.view_frg_main_tab_icon_profile);
+        final Bitmap iconProfileDefault = ((BitmapDrawable) iconProfile.getDrawable()).getBitmap();
+        final Bitmap iconProfileColored = HelperGlobal.setBitmapColor(HelperGlobal.getColor(activity, R.color.base_grey), iconProfileDefault);
+        tabLayout.getTabAt(4).setCustomView(tabProfile);
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -147,10 +154,12 @@ public class FragmentMain extends BaseFragment {
                     bgLoveSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     bgGridSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     bgNotifSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgProfileSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     iconHome.setImageBitmap(iconHomeColored);
                     iconLove.setImageBitmap(iconLoveDefault);
                     iconGrid.setImageBitmap(iconGridDefault);
                     iconNotif.setImageBitmap(iconNotifDefault);
+                    iconProfile.setImageBitmap(iconProfileDefault);
                 }
                 else if(tab.getPosition() == 1)
                 {
@@ -158,10 +167,12 @@ public class FragmentMain extends BaseFragment {
                     bgLoveSelected.setBackground(circle);
                     bgGridSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     bgNotifSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgProfileSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     iconHome.setImageBitmap(iconHomeDefault);
                     iconLove.setImageBitmap(iconLoveColored);
                     iconGrid.setImageBitmap(iconGridDefault);
                     iconNotif.setImageBitmap(iconNotifDefault);
+                    iconProfile.setImageBitmap(iconProfileDefault);
                 }
                 else if(tab.getPosition() == 2)
                 {
@@ -169,21 +180,38 @@ public class FragmentMain extends BaseFragment {
                     bgLoveSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     bgGridSelected.setBackground(circle);
                     bgNotifSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgProfileSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     iconHome.setImageBitmap(iconHomeDefault);
                     iconLove.setImageBitmap(iconLoveDefault);
                     iconGrid.setImageBitmap(iconGridColored);
                     iconNotif.setImageBitmap(iconNotifDefault);
+                    iconProfile.setImageBitmap(iconProfileDefault);
+                }
+                else if (tab.getPosition() == 3)
+                {
+                    bgHomeSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgLoveSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgGridSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgNotifSelected.setBackground(circle);
+                    bgProfileSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    iconHome.setImageBitmap(iconHomeDefault);
+                    iconLove.setImageBitmap(iconLoveDefault);
+                    iconGrid.setImageBitmap(iconGridDefault);
+                    iconNotif.setImageBitmap(iconNotifColored);
+                    iconProfile.setImageBitmap(iconProfileDefault);
                 }
                 else
                 {
                     bgHomeSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     bgLoveSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
                     bgGridSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
-                    bgNotifSelected.setBackground(circle);
+                    bgNotifSelected.setBackground(new ColorDrawable(Color.TRANSPARENT));
+                    bgProfileSelected.setBackground(circle);
                     iconHome.setImageBitmap(iconHomeDefault);
                     iconLove.setImageBitmap(iconLoveDefault);
                     iconGrid.setImageBitmap(iconGridDefault);
-                    iconNotif.setImageBitmap(iconNotifColored);
+                    iconNotif.setImageBitmap(iconNotifDefault);
+                    iconProfile.setImageBitmap(iconProfileColored);
                 }
             }
 
@@ -206,6 +234,7 @@ public class FragmentMain extends BaseFragment {
         adapter.addFragment(new FragmentLove(), "LOVE");
         adapter.addFragment(new FragmentGrid(), "GRID");
         adapter.addFragment(new FragmentNotification(), "NOTIFICATION");
+        adapter.addFragment(new FragmentProfile(), "PROFILE");
         viewPager.setAdapter(adapter);
     }
 

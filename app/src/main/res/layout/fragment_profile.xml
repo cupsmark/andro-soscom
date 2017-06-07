@@ -75,7 +75,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
-                    app:srcCompat="@drawable/icon_profile" />
+                    android:src="@drawable/icon_menu_profile" />
 
             </RelativeLayout>
 
@@ -351,7 +351,7 @@
             android:padding="10dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon_profile" />
+            android:src="@drawable/icon_menu_profile" />
     </LinearLayout>
 
 

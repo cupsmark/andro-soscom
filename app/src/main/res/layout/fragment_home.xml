@@ -21,10 +21,11 @@
             android:src="@drawable/header_logo" />
 
         <ImageButton
-            android:layout_width="35dp"
+            android:layout_width="30dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"

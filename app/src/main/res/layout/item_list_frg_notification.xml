@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/base_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/border_bottom_grey_light">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_list_frg_notification_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:riv_corner_radius="25dip"
+            app:riv_border_width="1dip"
+            app:riv_border_color="@android:color/transparent"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="repeat"
+            app:riv_oval="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/item_list_frg_notification_product_image">
+
+            <com.cups.soscom.ui.UIText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#383838"
+                android:id="@+id/item_list_frg_notification_caption"
+                android:text="@string/user_profile_name"
+                android:layout_alignParentLeft="true" />
+
+            <com.cups.soscom.ui.UIText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_list_frg_notification_caption"
+                android:textSize="12sp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#cacaca"
+                android:id="@+id/item_list_frg_notification_time"/>
+
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/item_list_frg_notification_product_image"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:riv_corner_radius="7dip"
+            app:riv_border_width="1dip"
+            app:riv_border_color="@android:color/transparent"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="repeat"
+            app:riv_oval="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
