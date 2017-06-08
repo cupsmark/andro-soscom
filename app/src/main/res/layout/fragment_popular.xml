@@ -10,12 +10,21 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/border_bottom_grey">
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:adjustViewBounds="true"
-            android:src="@drawable/header_logo" />
+        <!--<ImageView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:src="@drawable/header_logo" />-->
+        <com.cups.soscom.ui.UIText
+            android:id="@+id/frg_popular_pagetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#95989A"
+            android:background="@android:color/transparent"
+            android:text="POPULAR"
+            android:layout_centerInParent="true" />
 
         <ImageButton
             android:layout_width="30dp"

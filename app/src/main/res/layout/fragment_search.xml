@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/base_white">
 
@@ -34,6 +36,33 @@
 
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_grey_light"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_white_rounded_transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.cups.soscom.ui.UIText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/base_grey_half"
+                android:textSize="15sp"
+                android:text="All Categories"
+                app:fontType="semibold"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,7 +71,7 @@
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/base_white"
+            android:background="@color/base_grey_light"
             android:id="@+id/frg_search_recycler" />
 
     </android.support.v4.widget.SwipeRefreshLayout>

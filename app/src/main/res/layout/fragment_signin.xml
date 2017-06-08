@@ -121,6 +121,7 @@
                 android:background="@android:color/transparent"
                 android:text="@string/frg_signin_btn_forgot"
                 android:textColor="@color/base_grey"
+                android:textAllCaps="false"
                 android:textSize="16dp" />
 
             <ImageButton
@@ -155,6 +156,7 @@
                 android:text="@string/frg_signin_btn_signup"
                 android:textColor="@color/base_white"
                 android:paddingTop="10dp"
+                android:textAllCaps="false"
                 android:textSize="16dp" />
 
         </LinearLayout>
