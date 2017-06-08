@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.app.Activity;
 
+import com.crashlytics.android.Crashlytics;
 import com.cups.soscom.BaseActivity;
 import com.cups.soscom.BaseFragment;
 import com.cups.soscom.R;
@@ -12,11 +13,14 @@ import com.cups.soscom.helper.HelperGlobal;
 
 import java.util.Map;
 
+import io.fabric.sdk.android.Fabric;
+
 public class ActivityMain extends BaseActivity implements HelperGlobal.InterfaceFragment {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
     }
 

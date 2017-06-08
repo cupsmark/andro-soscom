@@ -4,14 +4,17 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
+import com.crashlytics.android.Crashlytics;
 import com.cups.soscom.BaseActivity;
 import com.cups.soscom.R;
+import io.fabric.sdk.android.Fabric;
 
 public class ActivityIntro extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_intro);
     }
 

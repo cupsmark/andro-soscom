@@ -33,6 +33,9 @@
         <activity
             android:name=".activity.ActivityAuth"
             android:label="@string/title_activity_auth"></activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="347059a687c5db207ea760f8c379292cba699dbd" />
     </application>
 
 </manifest>
