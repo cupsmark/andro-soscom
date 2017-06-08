@@ -106,9 +106,9 @@ public class FragmentMain extends BaseFragment {
         final Bitmap iconHomeColored = HelperGlobal.setBitmapColor(HelperGlobal.getColor(activity, R.color.base_grey), iconHomeDefault);
         tabLayout.getTabAt(0).setCustomView(tabHome);
 
-        final View tabLove = LayoutInflater.from(activity).inflate(R.layout.view_frg_main_tab_love, null, false);
-        final View bgLoveSelected = (View) tabLove.findViewById(R.id.view_frg_main_tab_icon_love_selected);
-        final ImageView iconLove = (ImageView) tabLove.findViewById(R.id.view_frg_main_tab_icon_love);
+        final View tabLove = LayoutInflater.from(activity).inflate(R.layout.view_frg_main_tab_popular, null, false);
+        final View bgLoveSelected = (View) tabLove.findViewById(R.id.view_frg_main_tab_icon_popular_selected);
+        final ImageView iconLove = (ImageView) tabLove.findViewById(R.id.view_frg_main_tab_icon_popular);
         final Bitmap iconLoveDefault = ((BitmapDrawable) iconLove.getDrawable()).getBitmap();
         final Bitmap iconLoveColored = HelperGlobal.setBitmapColor(HelperGlobal.getColor(activity, R.color.base_grey), iconLoveDefault);
         tabLayout.getTabAt(1).setCustomView(tabLove);

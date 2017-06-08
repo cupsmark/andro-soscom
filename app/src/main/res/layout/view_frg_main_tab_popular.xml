@@ -4,13 +4,13 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:adjustViewBounds="true"
         android:layout_centerInParent="true"
         android:scaleType="centerInside"
-        android:src="@drawable/icon_menu_love"
-        android:id="@+id/view_frg_main_tab_icon_love"/>
+        android:src="@drawable/icon_menu_star"
+        android:id="@+id/view_frg_main_tab_icon_popular"/>
 
     <View
         android:layout_width="10dp"
@@ -18,6 +18,6 @@
         android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/view_frg_main_tab_icon_love_selected" />
+        android:id="@+id/view_frg_main_tab_icon_popular_selected" />
 
 </RelativeLayout>

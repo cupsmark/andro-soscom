@@ -62,7 +62,7 @@
                 android:layout_height="15dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
-                android:src="@drawable/icon_star"
+                android:src="@drawable/icon_menu_love"
                 android:layout_gravity="center_vertical"/>
 
             <com.cups.soscom.ui.UIText

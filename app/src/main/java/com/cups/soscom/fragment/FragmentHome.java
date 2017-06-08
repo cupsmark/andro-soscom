@@ -40,7 +40,7 @@ public class FragmentHome extends BaseFragment {
     final String TAG_FRAGMENT_HOME = "tag:fragment_signin";
 
     ArrayList<String> dataHomeID, dataHomeFullname, dataHomeAvatar, dataHomeImage, dataHomeTitle,
-            dataHomePrice, dataHomeCountLove, dataHomeCountComment, dataHomeCountStar;
+            dataHomePrice, dataHomeCountLove, dataHomeCountComment;
 
     RecyclerView recyclerHome;
     AdapterHome adapterHome;
@@ -91,7 +91,6 @@ public class FragmentHome extends BaseFragment {
         dataHomePrice = new ArrayList<String>();
         dataHomeCountLove = new ArrayList<String>();
         dataHomeCountComment = new ArrayList<String>();
-        dataHomeCountStar = new ArrayList<String>();
         imageLoader = new UIImageLoader(activity);
         adapterHome = new AdapterHome();
 
@@ -195,12 +194,6 @@ public class FragmentHome extends BaseFragment {
             dataHomeCountComment.add("345");
             dataHomeCountComment.add("321");
             dataHomeCountComment.add("14");
-            dataHomeCountStar.add("112");
-            dataHomeCountStar.add("32");
-            dataHomeCountStar.add("544");
-            dataHomeCountStar.add("143");
-            dataHomeCountStar.add("165");
-            dataHomeCountStar.add("170");
             adapterHome.notifyDataSetChanged();
         }
         else
@@ -244,7 +237,6 @@ public class FragmentHome extends BaseFragment {
             holder.comPrice.setText(dataHomePrice.get(position));
             holder.comLove.setText(dataHomeCountLove.get(position));
             holder.comComment.setText(dataHomeCountComment.get(position));
-            holder.comStar.setText(dataHomeCountStar.get(position));
             imageLoader.showImage(dataHomeImage.get(position), holder.comBigImage);
             imageLoader.showImage(dataHomeAvatar.get(position), holder.comAvatar);
         }
@@ -256,7 +248,7 @@ public class FragmentHome extends BaseFragment {
 
 
         public class AdapterHomeHolder extends RecyclerView.ViewHolder{
-            UIText comFullname, comLove, comComment, comStar, comTitle, comPrice;
+            UIText comFullname, comLove, comComment, comTitle, comPrice;
             ImageView comBigImage, comAvatar;
 
             public AdapterHomeHolder(View itemView) {
@@ -266,7 +258,6 @@ public class FragmentHome extends BaseFragment {
                 comPrice = (UIText) itemView.findViewById(R.id.item_list_frg_home_product_price);
                 comLove = (UIText) itemView.findViewById(R.id.item_list_frg_home_stat_love);
                 comComment = (UIText) itemView.findViewById(R.id.item_list_frg_home_stat_comment);
-                comStar = (UIText) itemView.findViewById(R.id.item_list_frg_home_stat_star);
                 comBigImage = (ImageView) itemView.findViewById(R.id.item_list_frg_home_bigimage);
                 comAvatar = (ImageView) itemView.findViewById(R.id.item_list_frg_home_avatar);
             }
@@ -287,7 +278,6 @@ public class FragmentHome extends BaseFragment {
             dataHomePrice.clear();
             dataHomeCountLove.clear();
             dataHomeCountComment.clear();
-            dataHomeCountStar.clear();
         }
     }
 }

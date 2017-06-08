@@ -16,6 +16,7 @@
             <!--android:layout_centerHorizontal="true"-->
             <!--android:adjustViewBounds="true"-->
             <!--android:src="@drawable/header_logo" />-->
+
         <com.cups.soscom.ui.UIText
             android:id="@+id/frg_popular_pagetitle"
             android:layout_width="wrap_content"
