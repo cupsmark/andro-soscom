@@ -49,7 +49,7 @@ public class FragmentNotification extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if(mainView == null)
         {
-            mainView = inflater.inflate(R.layout.fragment_notification, container, false);
+            mainView = getLayoutInflater(savedInstanceState).inflate(R.layout.fragment_notification, container, false);
         }
         onInit();
         return mainView;

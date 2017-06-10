@@ -49,14 +49,17 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp">
 
-            <com.cups.soscom.ui.UIText
+            <com.cups.soscom.ui.UIEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:textColor="@color/base_grey_half"
                 android:textSize="15sp"
-                android:text="All Categories"
                 app:fontType="semibold"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="Search"
+                android:textColorHint="@color/base_grey_half"
                 android:layout_alignParentLeft="true"/>
         </RelativeLayout>
 

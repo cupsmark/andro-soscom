@@ -7,70 +7,205 @@
 
 
     <ImageView
-        android:id="@+id/id_user"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:src="@drawable/bg_login"
         android:layout_alignParentTop="true" />
 
-    <ImageView
-        android:id="@+id/logologin"
-        android:layout_width="128dp"
-        android:layout_height="124dp"
-        android:adjustViewBounds="true"
-        android:scaleType="centerInside"
-        android:src="@drawable/logo_login"
-        android:layout_marginTop="31dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/frg_signup_btn_register"
+        android:layout_marginBottom="10dp">
 
-    <AutoCompleteTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/logologin"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/logologin"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_login"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_grey"
+                android:layout_marginBottom="10dp">
+
+                <com.cups.soscom.ui.UIEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:ems="10"
+                    android:textColor="@color/base_grey"
+                    android:hint="Fullname"
+                    android:inputType="text"
+                    android:textColorHint="@color/base_grey"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/frg_signup_edit_fullname"
+                    android:layout_toLeftOf="@+id/frg_signup_icon_fullname"
+                    android:layout_marginRight="5dp"
+                    app:fontType="semibold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_check_red"
+                    android:id="@+id/frg_signup_icon_fullname"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_grey"
+                android:layout_marginBottom="10dp">
+
+                <com.cups.soscom.ui.UIEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:ems="10"
+                    android:textColor="@color/base_grey"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:textColorHint="@color/base_grey"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/frg_signup_edit_username"
+                    android:layout_toLeftOf="@+id/frg_signup_icon_username"
+                    android:layout_marginRight="5dp"
+                    app:fontType="semibold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_check_red"
+                    android:id="@+id/frg_signup_icon_username"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_grey"
+                android:layout_marginBottom="10dp">
+
+                <com.cups.soscom.ui.UIEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:ems="10"
+                    android:textColor="@color/base_grey"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/base_grey"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/frg_signup_edit_email"
+                    android:layout_toLeftOf="@+id/frg_signup_icon_email"
+                    android:layout_marginRight="5dp"
+                    app:fontType="semibold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_check_red"
+                    android:id="@+id/frg_signup_icon_email"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom_grey"
+                android:layout_marginBottom="10dp">
+
+                <com.cups.soscom.ui.UIEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:ems="10"
+                    android:textColor="@color/base_grey"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/base_grey"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/frg_signup_edit_password"
+                    android:layout_toLeftOf="@+id/frg_signup_icon_password"
+                    android:layout_marginRight="5dp"
+                    app:fontType="semibold"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_check_red"
+                    android:id="@+id/frg_signup_icon_password"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.cups.soscom.ui.UIButton
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_red_rounded_transparent"
+        android:id="@+id/frg_signup_btn_register"
+        android:textColor="@color/base_white"
+        android:textSize="16sp"
+        app:fontType="bold"
+        android:gravity="center"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="51dp"
-        android:background="@android:color/transparent"
-        android:text="Your name"
-        android:textColor="#383838"
-        android:textSize="18dp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#95989A"
-        android:layout_below="@+id/autoCompleteTextView"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="10dp"
-        />
-
-    <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/logologin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="51dp"
-        android:background="@android:color/transparent"
-        android:text="Your name"
-        android:textColor="#383838"
-        android:textSize="18dp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#95989A"
-        android:layout_below="@+id/autoCompleteTextView"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginTop="10dp"
-        />
-
+        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>

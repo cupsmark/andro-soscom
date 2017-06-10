@@ -51,6 +51,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:id="@+id/frg_profile_item_account"
+                android:clickable="true"
                 android:background="@color/base_white">
 
                 <com.cups.soscom.ui.UIText
@@ -84,6 +86,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/base_white"
+                android:id="@+id/frg_profile_item_address"
+                android:clickable="true"
                 android:layout_marginTop="10dp">
 
                 <com.cups.soscom.ui.UIText
@@ -117,6 +121,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/frg_profile_item_list_order"
+                android:clickable="true"
                 android:background="@color/base_white">
 
                 <com.cups.soscom.ui.UIText
@@ -150,6 +156,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/frg_profile_item_notification"
+                android:clickable="true"
                 android:background="@color/base_white">
 
                 <com.cups.soscom.ui.UIText
@@ -182,6 +190,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/base_white"
+                android:id="@+id/frg_profile_item_privacy"
+                android:clickable="true"
                 android:layout_marginTop="10dp">
 
                 <com.cups.soscom.ui.UIText
@@ -214,6 +224,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/frg_profile_item_settings"
+                android:clickable="true"
                 android:background="@color/base_white">
 
                 <com.cups.soscom.ui.UIText
@@ -246,6 +258,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/frg_profile_item_help"
+                android:clickable="true"
                 android:background="@color/base_white">
 
                 <com.cups.soscom.ui.UIText
@@ -278,6 +292,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/base_white"
+                android:id="@+id/frg_profile_item_logout"
+                android:clickable="true"
                 android:layout_marginTop="10dp">
 
                 <com.cups.soscom.ui.UIText

@@ -10,7 +10,7 @@
         android:layout_centerInParent="true"
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
-        android:src="@drawable/icon_menu_notif"
+        android:src="@drawable/icon_menu_love"
         android:id="@+id/view_frg_main_tab_icon_notification"/>
 
     <View

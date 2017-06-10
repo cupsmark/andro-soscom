@@ -20,6 +20,7 @@
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
+            android:layout_marginRight="10dp"
             android:src="@drawable/icon_shop" />
 
         <com.cups.soscom.ui.UIText

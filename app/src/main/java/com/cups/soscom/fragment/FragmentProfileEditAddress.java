@@ -1,42 +1,39 @@
 package com.cups.soscom.fragment;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
+import android.widget.ImageButton;
 
 import com.cups.soscom.BaseActivity;
 import com.cups.soscom.BaseFragment;
 import com.cups.soscom.R;
 import com.cups.soscom.helper.HelperGlobal;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
- * Created by ekobudiarto on 6/2/17.
+ * Created by ekobudiarto on 6/11/17.
  */
 
-public class FragmentProfile extends BaseFragment {
+public class FragmentProfileEditAddress extends BaseFragment{
 
     View mainView;
     HelperGlobal.InterfaceFragment interfaceFragment;
     BaseActivity activity;
-    final String TAG_FRAGMENT_PROFILE = "tag:fragment_profile";
+    private static final String TAG_FRAGMENT_PROFILE_EDIT_ADDRESS = "tag:fragment_profile_edit_address";
 
-    RelativeLayout relativeItemDelivery;
+    ImageButton imageButtonClose, imageButtonApply;
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if(mainView == null)
         {
-            mainView = getLayoutInflater(savedInstanceState).inflate(R.layout.fragment_profile, container, false);
+            mainView = getLayoutInflater(savedInstanceState).inflate(R.layout.fragment_profile_edit_address, container, false);
         }
         onInit();
         return mainView;
@@ -65,7 +62,7 @@ public class FragmentProfile extends BaseFragment {
     @Override
     public void onInit() {
         super.onInit();
-        setTAG(TAG_FRAGMENT_PROFILE);
+        setTAG(TAG_FRAGMENT_PROFILE_EDIT_ADDRESS);
     }
 
     @Override
@@ -77,21 +74,21 @@ public class FragmentProfile extends BaseFragment {
     @Override
     public void onInitComponent() {
         super.onInitComponent();
-        relativeItemDelivery = (RelativeLayout) mainView.findViewById(R.id.frg_profile_item_address);
+        imageButtonApply = (ImageButton) mainView.findViewById(R.id.frg_profile_edit_address_btn_apply);
+        imageButtonClose = (ImageButton) mainView.findViewById(R.id.frg_profile_edit_address_btn_cancel);
 
-        relativeItemDelivery.setOnClickListener(new View.OnClickListener() {
+        imageButtonApply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openEditAddress();
+                activity.onBackPressed();
             }
         });
-    }
-
-    private void openEditAddress()
-    {
-        FragmentProfileEditAddress address = new FragmentProfileEditAddress();
-        Map<String, String> param = new HashMap<String, String>();
-        interfaceFragment.onAttachFragment(address, param);
+        imageButtonClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                activity.onBackPressed();
+            }
+        });
     }
 
     @Override
@@ -101,6 +98,6 @@ public class FragmentProfile extends BaseFragment {
 
     @Override
     public String getTAG() {
-        return TAG_FRAGMENT_PROFILE;
+        return TAG_FRAGMENT_PROFILE_EDIT_ADDRESS;
     }
 }

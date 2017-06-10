@@ -53,7 +53,7 @@ public class FragmentHome extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         if(mainView == null)
         {
-            mainView = inflater.inflate(R.layout.fragment_home, container, false);
+            mainView = getLayoutInflater(savedInstanceState).inflate(R.layout.fragment_home, container, false);
         }
         onInit();
         return mainView;

@@ -8,4 +8,5 @@
     <color name="base_grey_half">#95989a</color>
     <color name="base_white">#ffffff</color>
     <color name="base_yellow">#e8ae2a</color>
+    <color name="base_red">#e06262</color>
 </resources>
