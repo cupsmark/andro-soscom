@@ -26,6 +26,8 @@ import com.cups.soscom.util.RecyclerViewItemDivider;
 import com.cups.soscom.util.UIImageLoader;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by ekobudiarto on 6/6/17.
@@ -111,7 +113,7 @@ public class FragmentPopular extends BaseFragment {
         recyclerPopular.addOnItemTouchListener(new HelperGlobal.RecyclerTouchListener(activity, recyclerPopular, new HelperGlobal.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-
+                openDetail(position);
             }
 
             @Override
@@ -180,6 +182,15 @@ public class FragmentPopular extends BaseFragment {
             isRefresh = false;
             refreshLayout.setRefreshing(false);
         }
+    }
+
+    private void openDetail(int position)
+    {
+        FragmentDetail detail = new FragmentDetail();
+        Map<String, String> param = new HashMap<String, String>();
+        param.put("data_image", dataPopularImage.get(position));
+        param.put("data_avatar", "");
+        interfaceFragment.onAttachFragment(detail, param);
     }
 
     class AdapterPopular extends RecyclerView.Adapter<AdapterPopular.AdapterPopularHolder>{

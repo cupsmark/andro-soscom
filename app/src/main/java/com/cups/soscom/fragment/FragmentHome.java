@@ -27,6 +27,8 @@ import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by ekobudiarto on 6/2/17.
@@ -117,7 +119,7 @@ public class FragmentHome extends BaseFragment {
         recyclerHome.addOnItemTouchListener(new HelperGlobal.RecyclerTouchListener(activity, recyclerHome, new HelperGlobal.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-
+                openDetail(position);
             }
 
             @Override
@@ -201,6 +203,15 @@ public class FragmentHome extends BaseFragment {
             isRefresh = false;
             refreshLayout.setRefreshing(false);
         }
+    }
+
+    private void openDetail(int position)
+    {
+        FragmentDetail detail = new FragmentDetail();
+        Map<String, String> param = new HashMap<String, String>();
+        param.put("data_image", dataHomeImage.get(position));
+        param.put("data_avatar", dataHomeAvatar.get(position));
+        interfaceFragment.onAttachFragment(detail, param);
     }
 
     @Override

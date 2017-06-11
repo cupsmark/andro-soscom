@@ -26,6 +26,8 @@ import com.cups.soscom.util.RecyclerViewItemDivider;
 import com.cups.soscom.util.UIImageLoader;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by ekobudiarto on 6/6/17.
@@ -114,7 +116,7 @@ public class FragmentSearch extends BaseFragment {
         recyclerSearch.addOnItemTouchListener(new HelperGlobal.RecyclerTouchListener(activity, recyclerSearch, new HelperGlobal.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-
+                openDetail(position);
             }
 
             @Override
@@ -187,6 +189,14 @@ public class FragmentSearch extends BaseFragment {
             refreshLayout.setRefreshing(false);
         }
     }
+
+    private void openDetail(int position)
+    {
+        FragmentDetail detail = new FragmentDetail();
+        Map<String, String> param = new HashMap<String, String>();
+        interfaceFragment.onAttachFragment(detail, param);
+    }
+
 
     class AdapterSearch extends RecyclerView.Adapter<AdapterSearch.AdapterSearchHolder>{
 
